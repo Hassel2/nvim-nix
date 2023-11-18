@@ -4,8 +4,8 @@ local opt = vim.o
 local g = vim.g
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
--- g.mapleader = ' '
--- g.maplocalleader = ' '
+g.mapleader = ' '
+g.maplocalleader = ' '
 
 cmd.syntax('on')
 cmd.syntax('enable')
@@ -22,20 +22,21 @@ end
 opt.path = vim.o.path .. '**'
 
 opt.number = true
-opt.relativenumber = true
+opt.ruler = true
 opt.cursorline = true
+opt.cc = "80,120"
 opt.lazyredraw = true
 opt.showmatch = true -- Highlight matching parentheses, etc
 opt.incsearch = true
 opt.hlsearch = true
 
-opt.spell = true
-opt.spelllang = 'en'
+opt.encoding = "UTF-8"
+opt.wrap = false
 
 opt.expandtab = true
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.softtabstop = 0
+opt.shiftwidth = 4
 opt.foldenable = true
 opt.history = 2000
 opt.nrformats = 'bin,hex' -- 'octal'
@@ -100,8 +101,6 @@ vim.diagnostic.config {
 }
 
 g.editorconfig = true
-
-vim.opt.colorcolumn = '100'
 
 -- Native plugins
 cmd.filetype('plugin', 'indent', 'on')
