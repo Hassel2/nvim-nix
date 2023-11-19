@@ -46,7 +46,7 @@ with final.pkgs.lib; let
     statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
     nvim-treesitter-context # nvim-treesitter-context
     everforest # everforest colorscheme
-    oil-nvim # A vim-vinegar like file explorer that lets you edit your filesystem like a normal Neovim buffer.
+    nvim-tree-lua # A file explorer tree for neovim written in lua
     bufferline-nvim
     indent-blankline-nvim
     # ^ UI
