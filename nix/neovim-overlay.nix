@@ -49,6 +49,7 @@ with final.pkgs.lib; let
     oil-nvim
     indent-blankline-nvim
     which-key-nvim
+    fidget-nvim
     # ^ UI
     # language support
     neodev-nvim # adds support for Neovim's Lua API to lua-language-server | https://github.com/folke/neodev.nvim/
