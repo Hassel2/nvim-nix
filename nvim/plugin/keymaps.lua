@@ -129,3 +129,9 @@ keymap.set('n', '<C-b>', '<C-b>zz', { desc = 'move up full-page and center' })
 keymap.set('n', '<C-t>', function() 
       require('oil').open_float()
 end)
+
+-- Navigator.nvim keymaps
+keymap.set({'n', 't'}, '<A-h>', '<CMD>NavigatorLeft<CR>')
+keymap.set({'n', 't'}, '<A-l>', '<CMD>NavigatorRight<CR>')
+keymap.set({'n', 't'}, '<A-k>', '<CMD>NavigatorUp<CR>')
+keymap.set({'n', 't'}, '<A-j>', '<CMD>NavigatorDown<CR>')
