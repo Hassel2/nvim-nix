@@ -45,9 +45,8 @@ with final.pkgs.lib; let
     nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
     statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
     nvim-treesitter-context # nvim-treesitter-context
-    everforest # everforest colorscheme
-    oil-nvim # A vim-vinegar like file explorer that lets you edit your filesystem like a normal Neovim buffer.
-    bufferline-nvim
+    gruvbox-nvim
+    oil-nvim
     indent-blankline-nvim
     # ^ UI
     # navigation/editing enhancement plugins
