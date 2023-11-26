@@ -22,6 +22,7 @@ vim.lsp.start {
   name = 'luals',
   cmd = { lua_ls_cmd },
   root_dir = vim.fs.dirname(vim.fs.find(root_files, { upward = true })[1]),
+  autostart = true,
   capabilities = require('user.lsp').make_client_capabilities(),
   before_init = require('neodev.lsp').before_init,
   settings = {
