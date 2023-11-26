@@ -72,7 +72,10 @@ with final.pkgs.lib; let
   extraPackages = with pkgs; [
     # language servers, etc.
     lua-language-server
-    nil # nix LSP
+    nil                     # nix LSP
+    jdt-language-server     # java LSP
+    yaml-language-server    # yaml LSP
+    ansible-language-server # ansible LSP
   ];
 in {
   # This is the neovim derivation
