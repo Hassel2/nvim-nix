@@ -9,7 +9,7 @@ vim.lsp.start {
   name = 'jdtls',
   cmd = { jdtls_cmd, "-data", "./.jdtls" },
   root_dir = function()
-    return vim.fs.dirname(vim.fs.find({ "gradlew" }, { upward = true })[1]);
+    return vim.fs.dirname(vim.fs.find({ "gradlew" }, { upward = true })[1])
   end,
   autostart = true,
   capabilities = require('user.lsp').make_client_capabilities(),
