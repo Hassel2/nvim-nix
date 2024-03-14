@@ -1,4 +1,5 @@
 local configs = require('nvim-treesitter.configs')
+require('nvim-treesitter.configs').setup {}
 configs.setup {
   highlight = {
     enable = true,
@@ -67,9 +68,6 @@ configs.setup {
         ['dF'] = '@class.outer',
       },
     },
-  },
-  context_commentstring = {
-    enable = true,
   },
 }
 
