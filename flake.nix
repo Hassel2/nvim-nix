@@ -2,7 +2,7 @@
   description = "Neovim derivation";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.05-darwin";
     flake-utils.url = "github:numtide/flake-utils";
 
     # Add bleeding-edge plugins here.
