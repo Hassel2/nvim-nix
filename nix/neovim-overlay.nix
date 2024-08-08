@@ -79,6 +79,7 @@ with final.pkgs.lib; let
     go
     gotmpl
     xml
+    nix
   ];
 
   extraPackages = with pkgs; [
