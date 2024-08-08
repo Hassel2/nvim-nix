@@ -14,7 +14,7 @@ with final.pkgs.lib; let
   all-plugins = with pkgs.vimPlugins; [
     # plugins from nixpkgs go in here.
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
-    nvim-treesitter.withAllGrammars
+    nvim-treesitter
     luasnip # snippets | https://github.com/l3mon4d3/luasnip/
     nvim-lspconfig
     # nvim-cmp (autocompletion) and extensions
@@ -74,6 +74,13 @@ with final.pkgs.lib; let
     # ^ bleeding-edge plugins from flake inputs
   ];
 
+  treesitter-parsers = with pkgs.vimPlugins.nvim-treesitter-parsers; [
+    yaml
+    go
+    gotmpl
+    xml
+  ];
+
   extraPackages = with pkgs; [
     # language servers, etc.
     lua-language-server
@@ -86,7 +93,7 @@ in {
   # This is the neovim derivation
   # returned by the overlay
   nvim-pkg = mkNeovim {
-    plugins = all-plugins;
+    plugins = all-plugins ++ treesitter-parsers;
     inherit extraPackages;
   };
 
