@@ -88,6 +88,7 @@ with final.pkgs.lib; let
     jdt-language-server     # java LSP
     yaml-language-server    # yaml LSP
     ansible-language-server # ansible LSP
+    gopls                   # golang LSP
   ];
 in {
   # This is the neovim derivation
