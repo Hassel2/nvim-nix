@@ -87,7 +87,6 @@ with final.pkgs.lib; let
     nil                     # nix LSP
     jdt-language-server     # java LSP
     yaml-language-server    # yaml LSP
-    ansible-language-server # ansible LSP
     gopls                   # golang LSP
   ];
 in {

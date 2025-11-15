@@ -1,16 +1,3 @@
--- vim.api.nvim_create_autocmd({ "bufnewfile", "bufread", "bufwinenter" }, {
---     pattern = { "*/*ansible*/*.yml" },
---     callback = function()
---         vim.opt.filetype = "yaml.ansible"
---         vim.lsp.start {
---             name = 'ansiblels',
---             cmd = { 'ansible-language-server', '--stdio'},
---             autostart = true,
---             capabilities = require('user.lsp').make_client_capabilities(),
---         }
---     end,
--- })
-
 local yamlls_cmd = 'yaml-language-server'
 
 -- Check if yaml-language-server is available
